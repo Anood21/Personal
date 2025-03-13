@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alanood Meshal Alshunaishni</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: inherit;
+        }
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .progress-bar {
+            width: 100%;
+            max-width: 400px;
+            background: #ddd;
+            border-radius: 5px;
+            height: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            margin: auto;
+        }
+        .progress {
+            height: 100%;
+            background: #007BFF;
+            border-radius: 5px;
+            position: relative;
+        }
+        .progress-text {
+            position: absolute;
+            right: 10px;
+            top: -20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .skills-container {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .skill {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .skill span {
+            font-weight: bold;
+        }
+        .progress-wrapper {
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+        }
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        .dark-mode section {
+            background-color: #444;
+            color: white;
+        }
+        .dark-mode .progress {
+            background: #666;
+        }
+        .dark-mode .progress-text {
+            color: white;
+        }
+        /* Pink mode styles */
+        .pink-mode {
+            background-color: #ff66b2;
+            color: white;
+        }
+        .pink-mode section {
+            background-color: #ff4d94;
+        }
+        /* Buttons styling */
+        #dark-mode-toggle, #pink-mode-toggle, #download-pdf {
+            margin: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        #dark-mode-toggle:hover, #pink-mode-toggle:hover, #download-pdf:hover {
+            background-color: #0056b3;
+        }
+        /* PDF download styling */
+        #download-pdf {
+            background-color: #28a745;
+        }
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alanood Meshal Alshunaishni</h1>
+        <p>🎓 Software Engineering Student | 📱 Aspiring Mobile & Web Developer | 🚀 Building a Kids' Event Booking App</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <button id="pink-mode-toggle">Toggle Pink Mode</button>
+        <button id="download-pdf">Download PDF</button>
+    </header>
+
+    <section id="personal-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:AlanoodMeshal14@outlook.com">AlanoodMeshal14@outlook.com</a></p>
+        <p>Phone: 0560388262</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alanood-alshunaihni-65b4502b7" target="_blank">www.linkedin.com/in/alanood-alshunaihni-65b4502b7</a></p>
+    </section>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            I'm passionate about developing user-friendly applications, and I'm currently working on a mobile app for booking kids' events and activities. I enjoy learning new technologies and improving my skills in web and mobile development.
+        </p>
+        <p>
+            🔹 Tech Stack: Java, React, Firebase, Flutter (exploring)<br>
+            🔹 Interests: UI/UX Design, Software Architecture, Full-Stack Development<br>
+            🔹 Currently Learning: Backend Development & APIs<br>
+            💡 Open to collaborations, discussions, and new ideas!
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>University of Hail (2022-now, expected graduation: 2026)</p>
+    </section>
+
+    <section id="skills">
+        <h2>Personal Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>Leadership</span>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span class="progress-text">85%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Problem-Solving</span>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span class="progress-text">90%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Communication</span>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                    <span class="progress-text">80%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Teamwork</span>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                    <span class="progress-text">88%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Time Management</span>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <span class="progress-text">75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Courses & Certifications</h2>
+        <ul>
+            <li>Full Stack Web Development in Java</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>English</li>
+            <li>Arabic</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Art</p>
+    </section>
+
+    <script>
+        // Dark Mode toggle functionality
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Pink Mode toggle functionality
+        const pinkModeToggle = document.getElementById('pink-mode-toggle');
+        pinkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('pink-mode');
+        });
+
+        // PDF download functionality
+        const downloadPdfButton = document.getElementById('download-pdf');
+        downloadPdfButton.addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+</body>
+</html>
